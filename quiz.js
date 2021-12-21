@@ -1,15 +1,24 @@
 var questOption = [
     {
-        q: "What is 4?",
-        options: ["1", "2", "3", "4"],
-        correct: "4"
+        q: "1. The external JavaScript file must contain the <script> tag.",
+        options: ["True", "False"],
+        correct: "False"
     },
     {
-        q: "What is 8?",
-        options: ["5", "6", "7", "8"],
-        correct: "8"
-    }  
-    
+        q: "2. Where is the correct place to insert a JavaScript?",
+        options: ["The <body>", "The <head>", "Both the <head> and <body>"],
+        correct: "Both the <head> and <body>"
+    },  
+    {
+        q: "3. How do you write *Hello World* in an alert box?",
+        options: ["msgBox()", "alert()", "alertBox()", "msg"],
+        correct: "alert()"
+    },
+    {
+        q: "4. Inside which HTML element do we put the JavaScript?",
+        options: ["<JavaScript>", "<scripting>", "<script", "<js>"],
+        correct: "<script>"
+    }
 ]
 
 // var backBtn = document.getElementById("back");
@@ -25,21 +34,8 @@ var right = 0;
 
 
 startBtn.addEventListener("click", function(){
-    // var element = event.target;
+  
     
-    // if (element.matches("#startButton")) {
-    //     startBtn = element.getAttribute("data-state");
-       
-    //     element.textContent= "";
-        
-    //     element.setAttribute("data-state", "invisible")
-    // }
-
-    //     if (state === "visible") {
-    //         element.dataset.state = "hidden";
-    // }
-    //     }
-   
     timer = 20;
     timeCountdown();
     currentQuest = 0;
@@ -53,9 +49,10 @@ function timeCountdown () {
         pageTimer.textContent = timer;
         if (timer === 0) {
             clearInterval(interval);
-            alert("game over")       
-            
+            alert("game over");
+            initials()                
         }
+     
     }, 1000)
 }
 
@@ -78,18 +75,20 @@ function checkAnswer () {
     console.log(this.textContent)
     if(this.textContent == questOption[currentQuest].correct){
         
-        right ++;
+        right += 1;
         localStorage.setItem("right", right);
         output.textContent = ("correct");
         
         // storeLocalData()
     }else {
-        console.log("incorrect")
+        console.log(output)
         timer -= 2;
         output.textContent = ("wrong");
+    
+        
     }
             
-
+    
 
     
     currentQuest++;
@@ -103,7 +102,7 @@ function checkAnswer () {
 
 function initials(){
      var input = prompt("initials please");
-    localStorage.setItem("score", input);
+    localStorage.setItem("input", input);
     location.replace("./score.html");
     console.log(input)
 }

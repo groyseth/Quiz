@@ -11,3 +11,4 @@ The score and intials are saved and displayed on the score board page.
 I made another javascript file ("js.js") to keep track of the scoreboard funtions.
 Finally once you click the back button it brings you back to the quiz page.
 
+[quiz link](https://groyseth.github.io/Quiz/ "Check it out!")

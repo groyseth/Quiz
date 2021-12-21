@@ -5,8 +5,8 @@ var nameList = document.getElementById("name");
 var numberList = document.getElementById("number");
 var scoreList = document.getElementById("scoreList");
 var scoreCount = document.getElementById("scoreCount");
-var scoreLength = [];
-
+var scoreLength = [right + input];
+var submitBtn = document.getElementById("save");
 
 
 backBtn.addEventListener("click", function(event){
@@ -21,22 +21,29 @@ backBtn.addEventListener("click", function(event){
 
 function scoreBoard(){
     
-var olfun = document.querySelector("#list-of-score");
+        submitBtn.addEventListener("click", function(){
+        
+    var olfun = document.querySelector("#newpart");
     olfun.innerHTML = "";
+    scoreLength = document.createElement("li");
+    scoreLength.textContent = " congradulations " + input + " you got " + right; 
     
-    var newList = document.createElement("li");
-    newList.textContent = " congradulations " + input + " you got " + right; 
-    olfun.appendChild(newList);
-    
-console.log(olfun)
-}
-
+    olfun.appendChild(scoreLength);  
+ 
+    }
+   
+ )}
 function renderLastRegistered() {
 
     nameList.textContent = input;
     
     numberList.textContent = right;
+    
 }
+
+// scoreLength.push(){
+
+// }
 
 
 renderLastRegistered();

@@ -38,7 +38,7 @@ function renderLastRegistered() {
     nameList.textContent = input;
     
     numberList.textContent = right;
-    
+    localStorage.setItem("user", renderLastRegistered)
 }
 
 // scoreLength.push(){

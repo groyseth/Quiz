@@ -32,7 +32,7 @@ var currentQuest;
 var right = 0;
 
 
-
+// on click starts timer, shows question and starts the cycle of questions
 startBtn.addEventListener("click", function(){
   
     
@@ -55,7 +55,7 @@ function timeCountdown () {
      
     }, 1000)
 }
-
+// cylces through the questions
 function showNextQuestion () {
     var questionEl = document.querySelector("#question");
     questionEl.textContent = questOption[currentQuest].q
@@ -79,7 +79,7 @@ function checkAnswer () {
         localStorage.setItem("right", right);
         output.textContent = ("correct");
         
-        // storeLocalData()
+        
     }else {
         console.log(output)
         timer -= 2;
@@ -99,51 +99,10 @@ function checkAnswer () {
     }
     
 }
-
+// prompts initals then changes the page
 function initials(){
      var input = prompt("initials please");
     localStorage.setItem("input", input);
     location.replace("./score.html");
-    console.log(input)
+    
 }
-
-
-  // var ulScore = document.querySelector("#list-of-score");
-    // ulScore.innerHTML = newLi.textContent = localStorage.getItem("right", right);
-    // newLi.textContent = localStorage.getItem("right", right)
-    // var newLi = document.createElement("li");
-        
-    //     newLi.addEventListener("click", storageScore)
-    //     olElement.appendChild(newLi)
-    // function storageScore(){
-    //     newLi.textContent = localStorage.getItem(right)
-    // }
-
-
-
-
-
-
-//Click on Start button
-  // start the timer
-  // display the first question with options 
-    // check if index < questions.length
-    //create a function with index as an argument
-  //each option is a button with click event on it // may be use event.target with matches function
-
-//Stopt the timer
-  // if timer = 0;
-  // if user finished the quiz
-
-//Find out if user clicked option is correct or not
-  //if correct : display message (for certain time period)
-  //wrong : display msg for certain time period)
-  // calculate the score (but don't display) and change the timer accordingly
-// index++
-//display the next question
-
-//once user finished with last question
- // stop timer
- //ask for user initials in a form > take that info and display it with score
- //save initials and score in local storage
- // a href will refer to second html file

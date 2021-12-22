@@ -9,7 +9,7 @@ once you answer the questions or the timer is "0", then a promt will appear for 
 I made another file called "score.html" for the score stats.
 The score and intials are saved and displayed on the score board page.
 I made another javascript file ("js.js") to keep track of the scoreboard funtions.
-There is a back button to take you back to the main quiz.
+It will display your current stats and there is a submit button.
 Finally once you click the back button it brings you back to the quiz page.
 
 [quiz link](https://groyseth.github.io/Quiz/ "Check it out!")

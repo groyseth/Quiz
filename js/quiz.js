@@ -36,7 +36,7 @@ var right = 0;
 startBtn.addEventListener("click", function(){
   
     
-    timer = 20;
+    timer = 19;
     timeCountdown();
     currentQuest = 0;
     showNextQuestion();

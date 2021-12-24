@@ -14,3 +14,5 @@ Finally once you click the back button it brings you back to the quiz page.
 
 [quiz link](https://groyseth.github.io/Quiz/ "Check it out!")
 
+![Screenshot (25)](https://user-images.githubusercontent.com/90479839/147311401-6728dec0-595e-48eb-8fad-a422eb8b7fd8.png)
+![Screenshot (24)](https://user-images.githubusercontent.com/90479839/147311405-0035f5aa-8929-4456-b219-2dfc97fbffa9.png)

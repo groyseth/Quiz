@@ -13,5 +13,4 @@ It will display your current stats and there is a submit button.
 Finally once you click the back button it brings you back to the quiz page.
 
 [quiz link](https://groyseth.github.io/Quiz/ "Check it out!")
-![Screenshot (19)](https://user-images.githubusercontent.com/90479839/147310405-e8a80c39-d2ce-439b-85be-e660ce052ff3.png)
-![image](https://user-images.githubusercontent.com/90479839/147310443-0c321436-3555-4525-84c0-96f6a02d1e56.png)
+

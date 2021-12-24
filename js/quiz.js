@@ -2,22 +2,22 @@ var questOption = [
     {
         q: "1. The external JavaScript file must contain the <script> tag.",
         options: ["True", "False"],
-        correct: "False"
+        correct: "False "
     },
     {
         q: "2. Where is the correct place to insert a JavaScript?",
         options: ["The <body>", "The <head>", "Both the <head> and <body>"],
-        correct: "Both the <head> and <body>"
+        correct: "Both the <head> and <body> "
     },  
     {
         q: "3. How do you write *Hello World* in an alert box?",
         options: ["msgBox()", "alert()", "alertBox()", "msg"],
-        correct: "alert()"
+        correct: "alert() "
     },
     {
         q: "4. Inside which HTML element do we put the JavaScript?",
-        options: ["<JavaScript>", "<scripting>", "<script", "<js>"],
-        correct: "<script>"
+        options: ["<JavaScript>", "<scripting>", "<script>", "<js>"],
+        correct: "<script> "
     }
 ]
 
